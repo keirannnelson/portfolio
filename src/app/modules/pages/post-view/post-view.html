@@ -1,0 +1,8 @@
+@if (filename !== undefined) {
+    <markdown
+        katex
+        [src]="filename()"
+    ></markdown>
+} @else {
+    <p>Post not found</p>
+}

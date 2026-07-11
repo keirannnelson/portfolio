@@ -1,6 +1,6 @@
 import { provideHttpClient, withFetch } from '@angular/common/http';
 import { ApplicationConfig, provideBrowserGlobalErrorListeners, SecurityContext } from '@angular/core';
-import { provideRouter } from '@angular/router';
+import { provideRouter, withComponentInputBinding } from '@angular/router';
 import { provideMarkdown, SANITIZE } from 'ngx-markdown'
 
 import { routes } from './app.routes';
@@ -9,7 +9,7 @@ import { provideClientHydration } from '@angular/platform-browser';
 export const appConfig: ApplicationConfig = {
   providers: [provideHttpClient(withFetch()), 
     provideBrowserGlobalErrorListeners(),
-    provideRouter(routes), provideClientHydration(),
+    provideRouter(routes, withComponentInputBinding()), provideClientHydration(),
     provideMarkdown({
       sanitize: {
         provide: SANITIZE,
