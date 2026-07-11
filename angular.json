@@ -31,7 +31,9 @@
             "server": "src/main.server.ts",
             "outputMode": "server",
             "security": {
-              "allowedHosts": []
+              "allowedHosts": [
+                "keirannnelson.pages.dev"
+              ]
             },
             "ssr": {
               "entry": "src/server.ts",
