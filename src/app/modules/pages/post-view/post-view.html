@@ -1,7 +1,7 @@
 @if (filename !== undefined) {
     <markdown
         katex
-        [src]="filename()"
+        [src]="filename() + '.md'"
     ></markdown>
 } @else {
     <p>Post not found</p>
