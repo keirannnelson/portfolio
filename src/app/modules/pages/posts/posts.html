@@ -1,0 +1,9 @@
+<h1>Posts</h1>
+@for (post of posts; track $index) {
+    @let name = post.filename.replace('.md', '');
+    <div class="post">
+        <a routerLink="{{name}}">{{post.date}}: {{name}}</a>
+    </div>
+} @empty {
+    <p>No posts found</p>
+}
