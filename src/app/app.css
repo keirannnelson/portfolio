@@ -10,3 +10,7 @@
         flex-shrink: 0; 
     }
 }
+
+.page-content {
+    padding: 2rem;
+}
