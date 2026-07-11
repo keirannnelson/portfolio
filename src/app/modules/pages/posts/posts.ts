@@ -22,7 +22,7 @@ export class Posts {
       date: '1-1-2005'
     },
     {
-      filename: 'test.md',
+      filename: 'test1.md',
       date: '1-1-2005'
     },
   ]
