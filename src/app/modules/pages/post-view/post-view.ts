@@ -1,6 +1,7 @@
 import { Component, inject, input } from '@angular/core';
 import { MarkdownComponent } from 'ngx-markdown';
 import { Globals } from '../../../globals';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-post-view',
@@ -13,13 +14,12 @@ export class PostView {
 
   readonly filename = input.required<string>();
   found = false;
-  
+
+  constructor(private router: Router) {}
+
   ngOnInit() {
-    for (const post of this.globals.posts) {
-      if (post.filename == this.filename() + '.md') {
-        this.found = true;
-        break;
-      }
+    if (!this.globals.posts.filter((post) => post.filename == this.filename() + '.md').length) {
+      this.router.navigate(['not-found'], { skipLocationChange: true });
     }
   }
 }
