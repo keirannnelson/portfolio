@@ -5,6 +5,7 @@ import { provideMarkdown, SANITIZE } from 'ngx-markdown'
 
 import { routes } from './app.routes';
 import { provideClientHydration } from '@angular/platform-browser';
+import { Globals } from './globals';
 
 export const appConfig: ApplicationConfig = {
   providers: [provideHttpClient(withFetch()), 
@@ -15,6 +16,6 @@ export const appConfig: ApplicationConfig = {
         provide: SANITIZE,
         useValue: SecurityContext.NONE
       },
-    })
-  ]
+    }),
+  ],
 };

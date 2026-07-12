@@ -1,12 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { RouterLink } from '@angular/router';
-
-type PostStruct = {
-  filename: string;
-  date: string;
-  tags?: string[];
-};
-
+import { Globals } from '../../../globals';
 
 @Component({
   selector: 'app-posts',
@@ -16,14 +10,6 @@ type PostStruct = {
 })
 export class Posts {
   // TODO: Replace hard coded posts with dynamically generated ones
-  readonly posts: PostStruct[] = [
-    {
-      filename: 'test.md',
-      date: '1-1-2005'
-    },
-    {
-      filename: 'test1.md',
-      date: '1-1-2005'
-    },
-  ]
+  globals = inject(Globals);
+  posts = this.globals.posts;
 }
