@@ -1,16 +1,15 @@
 .app-container {
-    display: flex;
-    flex-direction: column;
+    display: block;
     min-height: 100dvh; 
-    .page-content {
-        align-self:center; justify-content: flex-start; flex: 1 0 auto; max-width: 60%;
-    }
-
-    .footer {
-        flex-shrink: 0; 
-    }
+    background-image: linear-gradient(to bottom right, white, rgb(0, 145, 255));
 }
 
 .page-content {
+    text-align: center;
+    margin: auto;
+    width: 60%;
+    min-height: 100dvh;
     padding: 2rem;
+    background-color: white;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.3);
 }

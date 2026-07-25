@@ -1,6 +1,9 @@
 footer {
-    background-color: #ccc;
     padding: .5rem;
+    background-color: #cccccc6c;   
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .content {
