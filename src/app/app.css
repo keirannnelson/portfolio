@@ -7,15 +7,16 @@
 .page-content {
     text-align: center;
     margin: 4rem auto;
-    border-radius: 10px;
     width: 60%;
-    min-height: 90dvh;
     padding: 2rem;
-    background-color: white;
-    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.3);
+
 }
 
 .blur-div {
     backdrop-filter: blur(2px);
     -webkit-backdrop-filter: blur(2px);
+}
+
+.content-wrapper {
+    min-height: 90dvh;
 }
