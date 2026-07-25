@@ -1,15 +1,21 @@
 .app-container {
     display: block;
     min-height: 100dvh; 
-    background-image: linear-gradient(to bottom right, white, rgb(0, 145, 255));
+    background-image: url('../../public/fractal.jpg');
 }
 
 .page-content {
     text-align: center;
-    margin: auto;
+    margin: 4rem auto;
+    border-radius: 10px;
     width: 60%;
-    min-height: 100dvh;
+    min-height: 90dvh;
     padding: 2rem;
     background-color: white;
     box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.blur-div {
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
 }
