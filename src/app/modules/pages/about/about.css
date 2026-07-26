@@ -1,0 +1,27 @@
+p {
+    text-align: center;
+}
+
+.about-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    
+    gap: 2rem;
+    justify-content: space-between;
+}
+
+.card {
+    flex-grow: 1;
+}
+
+.contact-div {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-img {
+    width: 2rem;
+}
