@@ -12,3 +12,40 @@ a:visited {
 a:hover {
   text-decoration: underline;
 }
+
+.basic-content-wrapper {
+  padding: 2rem;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.90);
+  box-shadow: 2px 4px 8px rgb(0, 0, 0);
+}
+
+.multi-box-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.lift-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.lift-card:hover {
+  transform: translateY(-4px);
+}
+
+.liquid-header {
+  font-size: 4rem;
+  font-weight: 800;
+  
+  color: rgba(255, 255, 255, 0.90);
+  background-clip: text;
+  -webkit-background-clip: text;
+  
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  
+  -webkit-text-stroke: 1.5px rgba(0, 0, 0, 0.6);
+
+  filter: drop-shadow(0 2px 6px rgb(0, 0, 0));
+}
