@@ -1,5 +1,5 @@
-<div class="posts-div">
-    <h1>Posts</h1>
+<h1 class="liquid-header">Posts</h1>
+<div class="basic-content-wrapper">
     <div class="posts-wrapper">
         @for (post of posts; track $index) {
             @let name = post.filename.replace('.md', '');

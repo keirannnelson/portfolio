@@ -1,18 +1,4 @@
 .name-header {
-    font-size: 4rem;
-    font-weight: 800;
-    
-    color: #cccccccc;
-    background-clip: text;
-    -webkit-background-clip: text;
-    
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
-    
-    -webkit-text-stroke: 1.5px rgba(0, 0, 0, 0.6);
-
-    filter: drop-shadow(0 2px 6px rgb(0, 0, 0));
-
     height: 30dvh;
 }
 
@@ -23,9 +9,5 @@
 }
 
 .link-box {
-    background-color: white;
-    box-shadow: 2px 4px 8px rgb(0, 0, 0);
-    border-radius: 10px;
-    padding: 2rem;
     width: 20%;
 }
