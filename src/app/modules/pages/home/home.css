@@ -5,9 +5,23 @@
 .link-wrapper {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 2rem;
 }
 
 .link-box {
     width: 20%;
+    min-width: fit-content;
+    flex-grow: 1;
+}
+
+.contact-div {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-img {
+    width: 2rem;
 }
