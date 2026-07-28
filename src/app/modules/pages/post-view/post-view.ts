@@ -1,6 +1,6 @@
 import { Component, inject, input } from '@angular/core';
 import { MarkdownComponent } from 'ngx-markdown';
-import { Globals } from '../../../globals';
+import { Globals, PostStruct } from '../../../globals';
 import { Router } from '@angular/router';
 
 @Component({
