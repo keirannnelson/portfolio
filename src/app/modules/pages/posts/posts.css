@@ -1,20 +1,14 @@
-p {
-    padding: 0;
-    margin: 0;
-}
-
 .post {
-    border-bottom: 1px solid #ccc;
-    padding: 1rem 2rem;
-    transition: background-color 0.3s ease;
-    margin: 2rem;
+    width: 60%;
+    align-self: center;
 }
 
-.post:hover {
-    background-color: #ccc;
+@media (max-width: 768px) {
+    .post {
+        width: 90%;
+    }
 }
 
-.posts-wrapper {
-    margin: auto;
-    width: fit-content;
+.post-column {
+    width: 100%;
 }

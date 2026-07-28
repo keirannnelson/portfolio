@@ -1,13 +1,11 @@
 <h1 class="liquid-header">Posts</h1>
-<div class="basic-content-wrapper">
-    <div class="posts-wrapper">
-        @for (post of posts; track $index) {
-            @let name = post.filename.replace('.md', '');
-            <div class="post">
-                <a routerLink="{{name}}">{{post.date}}: {{name}}</a>
-            </div>
-        } @empty {
-            <p>No posts found</p>
-        }
-    </div>
+<div class="multi-box-wrapper">
+    @for (post of posts; track $index) {
+        @let name = post.filename.replace('.md', '');
+        <div class="basic-content-wrapper post lift-card">
+            <a routerLink="{{name}}">{{post.date}}: {{name}}</a>
+        </div>
+    } @empty {
+        <p>No posts found</p>
+    }
 </div>
