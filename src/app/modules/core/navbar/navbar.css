@@ -22,3 +22,7 @@
 a.active-class {
   color: #007bff;
 }
+
+img {
+  width: 2rem;
+}
