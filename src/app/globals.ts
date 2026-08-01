@@ -12,8 +12,8 @@ export type PostStruct = {
 export class Globals {
     public readonly posts: PostStruct[] = [
     {
-      filename: 'test.md',
-      date: '1-1-2005'
+      filename: 'Periodic_Decimal_Expansions.md',
+      date: '7-27-2026'
     },
   ]
 }

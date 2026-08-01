@@ -1,7 +1,8 @@
 .app-container {
     display: block;
     min-height: 100dvh; 
-    background-image: url('../../public/fractal.jpg');
+    /* background-color: rgb(176, 251, 255); */
+    background-image: url('../../public/fractal-blur.png');
 }
 
 .page-content {
@@ -10,11 +11,6 @@
     max-width: 60%;
     padding: 2rem;
 
-}
-
-.blur-div {
-    backdrop-filter: blur(2px);
-    -webkit-backdrop-filter: blur(2px);
 }
 
 .content-wrapper {

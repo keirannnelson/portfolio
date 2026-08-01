@@ -1,5 +1,5 @@
-<h1 class="liquid-header">{{ filename().replace('.md', '') }}</h1>
-<div class="basic-content-wrapper">
+<h1 class="liquid-header">{{ filename().replace('.md', '').replaceAll('_',' ') }}</h1>
+<div class="basic-content-wrapper post-content">
     <markdown
         katex
         [src]="filename() + '.md'"

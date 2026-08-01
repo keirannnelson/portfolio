@@ -3,7 +3,7 @@
     @for (post of posts; track $index) {
         @let name = post.filename.replace('.md', '');
         <div class="basic-content-wrapper post lift-card">
-            <a routerLink="{{name}}">{{post.date}}: {{name}}</a>
+            <a routerLink="{{name}}">{{post.date}}: {{name.replaceAll('_',' ')}}</a>
         </div>
     } @empty {
         <p>No posts found</p>
