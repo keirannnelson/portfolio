@@ -1,3 +1,4 @@
 .post-content {
     text-align: left;
+    overflow-x: scroll;
 }
