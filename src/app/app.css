@@ -1,9 +1,8 @@
 .app-container {
     display: block;
     min-height: 100dvh; 
-    /* background-color: rgb(176, 251, 255); */
     background-image: url('../../public/fractal-continuous_blur.png');
-    width:fit-content;
+    min-width:fit-content;
 }
 
 .page-content {
